@@ -5,9 +5,9 @@ module rippleUp(clk, rst, out);
 	wire qbar0, qbar1, qbar2, qbar3;
 	
 	DFlipFlop bit0 (out[0], qbar0, qbar0, clk, rst);
-	DFlipFlop bit1 (out[1], qbar1, qbar1, out[0], rst);
-	DFlipFlop bit2 (out[2], qbar2, qbar2, out[1], rst);
-	DFlipFlop bit3 (out[3], qbar3, qbar3, out[2], rst);
+	DFlipFlop bit1 (out[1], qbar1, qbar1, qbar0, rst);
+	DFlipFlop bit2 (out[2], qbar2, qbar2, qbar1, rst);
+	DFlipFlop bit3 (out[3], qbar3, qbar3, qbar2, rst);
 endmodule 
 
 module rippleUp_testbench();
@@ -23,8 +23,8 @@ module rippleUp_testbench();
 		// reset state to 0's
 		clk = 0;
 		rst = 0;
-		#(4*t);
+		#(2*t);
 		rst = 1;
-		#(4*t);
+		#(2*t);
 	end
 endmodule 
