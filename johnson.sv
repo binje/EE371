@@ -5,6 +5,7 @@ module johnson(clk, rst, out);
 	wire qbar0, qbar1, qbar2, qbar3;
 	reg d0, d1, d2, d3;
 	
+	// Behavioral level logic
 	always@(posedge clk)
 	begin
 		d0 = ~out[3];

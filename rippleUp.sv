@@ -2,6 +2,7 @@ module rippleUp(clk, rst, out);
 	input clk, rst;
 	output [3:0] out;
 	
+	// Gate-level logic
 	wire qbar0, qbar1, qbar2, qbar3;
 	
 	DFlipFlop bit0 (out[0], qbar0, qbar0, clk, rst);

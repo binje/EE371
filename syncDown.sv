@@ -4,11 +4,12 @@ module syncDown(clk, rst, out);
 	
 	wire d0, d1, d2, d3, qbar0, qbar1, qbar2, qbar3;
 	
+	// Data flow assignment
 	assign d0 = ~out[0];
 	assign d1 = ~(out[1] ^ out[0]);
-	assign d2 = (out[2] & out[0]) + (out[2] & out[1]) + (~out[2] & ~out[1] & ~out[0]);
- 	assign d3 = (~out[3] & ~out[2] & ~out[1] & ~out[0]) + (out[3] & out[2]) +
-					(out[3] & out[0]) + (out[3] & out[1]);
+	assign d2 = (out[2] & out[1]) | (out[2] & out[0]) | (~out[2] & ~out[1] & ~out[0]);
+ 	assign d3 = (~out[3] & ~out[2] & ~out[1] & ~out[0]) | (out[3] & out[2]) |
+					(out[3] & out[0]) | (out[3] & out[1]);
 	
 	DFlipFlop bit0 (out[0], qbar0, d0, clk, rst);
 	DFlipFlop bit1 (out[1], qbar1, d1, clk, rst);
