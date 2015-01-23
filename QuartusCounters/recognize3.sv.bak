@@ -1,0 +1,7 @@
+module recognize3(LEDvalue, SW3, SW2, SW1, SW0);
+	output LEDvalue;
+	input SW3, SW2, SW1, SW0;
+	wire
+	
+	LEDvalue = 
+endmodule

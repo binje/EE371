@@ -1,0 +1,7 @@
+module recognize6 (LEDvalue, SW3, SW2, SW1, SW0);
+	input SW3, SW2, SW1, SW0;
+	output lEDvalue;
+	
+	LEDvalue = SW2*SW1*(~SW3)*(~SW0);
+	
+endmodule
