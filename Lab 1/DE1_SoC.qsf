@@ -965,6 +965,8 @@ set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_RESET_N
 set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_CK_P
 set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_CK_N
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE andorTop0.v
+set_global_assignment -name VERILOG_FILE andOr0.v
 set_global_assignment -name SYSTEMVERILOG_FILE syncDown.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rippleUp.sv
 set_global_assignment -name SYSTEMVERILOG_FILE johnson.sv

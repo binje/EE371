@@ -1,0 +1,248 @@
+# Reading C:/Program Files (x86)/Altera/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# vsim -gui Files {(x86)\Altera\modelsim_ase\win32aloem\modelsim.exe} 
+# ** Error: (vsim-3170) Could not find 'C:/Users/Emmett/Documents/College Courses/EE 371/EE371/Lab 2/work.Files'.
+# 
+# Error loading design
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# ** Error: ./SRAM.sv(14): near "wire": syntax error, unexpected wire, expecting ';' or ','
+# ** Error: ./SRAM.sv(24): (vlog-2730) Undefined variable: 'ReadData'.
+# 
+# ** Error: ./SRAM.sv(24): Checker 'SRAM' not found.  Instantiation 'ram' must be of a visible checker.
+# ** Error: C:/Program Files (x86)/Altera/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/Program Files (x86)/Altera/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./SRAM.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# ** Error: ./SRAM.sv(24): Checker 'SRAM' not found.  Instantiation 'ram' must be of a visible checker.
+# ** Error: C:/Program Files (x86)/Altera/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/Program Files (x86)/Altera/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./SRAM.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# ** Error: Cannot open macro file: SRAM_testbench_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: SRAM_testbench_wave.do
+#     while executing
+# "do SRAM_testbench_wave.do"
+add wave -position end  sim:/SRAM_testbench/ReadRegister
+add wave -position end  sim:/SRAM_testbench/WriteRegister
+add wave -position end  sim:/SRAM_testbench/WriteData
+add wave -position end  sim:/SRAM_testbench/WriteEnable
+add wave -position end  sim:/SRAM_testbench/ReadData
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Emmett/Documents/College Courses/EE 371/EE371/Lab 2/SRAM_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab
+# Cannot open macro file: runlab
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab
+# Cannot open macro file: runlab
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module SRAM
+# -- Compiling module SRAM_testbench
+# 
+# Top level modules:
+# 	SRAM_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps SRAM_testbench 
+# Loading sv_std.std
+# Loading work.SRAM_testbench
+# Loading work.SRAM
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
