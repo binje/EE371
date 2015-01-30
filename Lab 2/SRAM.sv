@@ -1,10 +1,10 @@
 module SRAM (ReadData, ReadRegister, WriteRegister, WriteData, WriteEnable);
-	input [6:0] ReadRegister, WriteRegister, WriteData;
-	input WriteEnable;
-	output [6:0] ReadData;
-	
 	parameter WIDTH = 128;
 	parameter WORD_BIT_SIZE = 8;
+	
+	input [6:0] ReadRegister, WriteRegister, WriteData;
+	input WriteEnable;
+	output [(WORD_BIT_SIZE-1):0] ReadData;
 	
 	// initialize registers of selected depth and word size
 	reg [(WORD_BIT_SIZE-1):0] SRAM [(WIDTH-1):0];
@@ -22,26 +22,35 @@ endmodule
 module SRAM_testbench();
 	reg [6:0] ReadRegister, WriteRegister, WriteData;
 	reg WriteEnable;
-	wire [6:0] ReadData;
+	wire [7:0] ReadData;
 	
 	parameter t = 10;
 	
 	SRAM ram (.ReadData, .ReadRegister, .WriteRegister, .WriteData, .WriteEnable);
 		
 	initial begin
+		// Write all 0s to reg 0
 		ReadRegister = 7'b0000000;
 		WriteRegister = 7'b0000000;
-		WriteData = 7'b0000000;
+		WriteData = 8'b0000000;
 		WriteEnable = 1;
 		#(20*t);
+		
+		// Read register 1, should be unknown
 		ReadRegister = 7'b0000001;
 		#(20*t);
+		
+		// write all 1s to reg 1, read value should be all 1s now
 		WriteRegister = 7'b0000001;
-		WriteData = 7'b1111111;
+		WriteData = 8'b1111111;
 		#(20*t);
+		
+		// disable write, try to write 1010s.. to reg 1, read value shouldn't change
 		WriteEnable = 0;
-		WriteData = 7'b1010101;
+		WriteData = 8'b1010101;
 		#(20*t);
+		
+		// enable write, read value should change to 101010
 		WriteEnable = 1;
 		#(20*t);
 	end

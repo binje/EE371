@@ -5,4 +5,4 @@ module fullAdder(A, B, C, sum, co);
 	assign sum = A ^ B ^ C;
 	
 	assign co = B&C || A&C || A&B;
-endmodule 
+endmodule
