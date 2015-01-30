@@ -968,3 +968,4 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name SDC_FILE DE1_SoC.sdc
 set_global_assignment -name SYSTEMVERILOG_FILE DE1_SoC.sv
 set_global_assignment -name SYSTEMVERILOG_FILE SRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE alu.sv

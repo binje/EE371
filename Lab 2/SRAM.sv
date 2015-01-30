@@ -4,7 +4,7 @@ module SRAM (ReadData, ReadRegister, WriteRegister, WriteData, WriteEnable);
 	output [6:0] ReadData;
 	
 	parameter WIDTH = 128;
-	parameter WORD_BIT_SIZE = 7;
+	parameter WORD_BIT_SIZE = 8;
 	
 	// initialize registers of selected depth and word size
 	reg [(WORD_BIT_SIZE-1):0] SRAM [(WIDTH-1):0];
